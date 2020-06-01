@@ -21,4 +21,6 @@ function init() {
 
 }
 
+promptUser();
+
 init();
