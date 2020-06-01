@@ -37,9 +37,16 @@ function promptUser() {
             message: "Who are the author(s) of the project?"
         }
     ])
+    .then(answers => {
+        fs.writeFile("README2.md", JSON.stringify(answers), (err) => {
+            if (err) throw err;
+            console.log("README generated!")
+        })
+    })
 }
 
 function writeToFile(fileName, data) {
+    
 }
 
 function init() {
