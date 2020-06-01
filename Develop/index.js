@@ -9,7 +9,32 @@ function promptUser() {
         {
             type: "input",
             name: "name",
-            message: "what is the name of your readme"
+            message: "What is the name of your project?"
+        },
+        {
+            type: "input",
+            name: "description",
+            message: "Describe the project"
+        },
+        {
+            type: "input",
+            name: "installation",
+            message: "How do you install the project?"
+        },
+        {
+            type: "input",
+            name: "usage",
+            message: "What's the intended use of the project?"
+        },
+        {
+            type: "input",
+            name: "support",
+            message: "Where can I find support?"
+        },
+        {
+            type: "input",
+            name: "author",
+            message: "Who are the author(s) of the project?"
         }
     ])
 }
