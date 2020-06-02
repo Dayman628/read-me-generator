@@ -46,7 +46,7 @@ function promptUser() {
         }
     ])
     .then(answers => {
-        fs.writeFile("README2.md", generatemd(answers), (err) => {
+        fs.writeFile("README.md", generatemd(answers), (err) => {
             if (err) throw err;
             console.log("README generated!")
         })
