@@ -28,9 +28,16 @@ function promptUser() {
             message: "What's the intended use of the project?"
         },
         {
-            type: "input",
-            name: "support",
-            message: "Where can I find support?"
+            type: "list",
+            name: "license",
+            message: "License: ",
+            choices: [
+                "MIT",
+                "Apache",
+                "GPL v3",
+                "BSD 3-clause",
+                "Other",
+            ]
         },
         {
             type: "input",
