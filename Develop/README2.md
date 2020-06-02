@@ -1,18 +1,18 @@
 
-# undefined
+# README GENERATOR
 
 ## Description -
-jk
+This is a readme generator. Using node the user can input information into the command line and have a dynamically generated readme returned to them.
 
 ## Installation = 
-jk
+npm install, npm install inquirer
 
 ## Usage -
-jk
+whatever
 
 ## License -
-MIT
+![license](https://img.shields.io/badge/license-MIT-GREEN)
 
 ## Author -
-jk
+Andrew Morrow
 
