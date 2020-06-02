@@ -1,1 +1,0 @@
-{"name":"jkl;","description":"jkl;","installation":"jkl","usage":"jh","support":"jh","author":"jh"}

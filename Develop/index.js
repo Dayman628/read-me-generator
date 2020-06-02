@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
+const generatemd = require("09-NodeJS\02-Homework\read-me-generator\Develop\utils\generateMarkdown.js")
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -38,8 +39,9 @@ function promptUser() {
         }
     ])
     .then(answers => {
-        fs.writeFile("README2.md", JSON.stringify(answers), (err) => {
+        fs.writeFile("README2.txt", JSON.stringify(answers), (err) => {
             if (err) throw err;
+            `${answers.name} is the name of the project`
             console.log("README generated!")
         })
     })
@@ -52,6 +54,8 @@ function writeToFile(fileName, data) {
 function init() {
 
 }
+
+
 
 promptUser();
 
