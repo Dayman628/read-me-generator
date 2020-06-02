@@ -12,7 +12,7 @@ ${data.installation}
 ${data.usage}
 
 ## License -
-${data.license}
+![license](https://img.shields.io/badge/license-${data.license}-GREEN)
 
 ## Author -
 ${data.author}
