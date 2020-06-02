@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-const generatemd = require("utils\generateMarkdown.js")
+const generatemd = require("./utils/generateMarkdown.js")
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -46,9 +46,8 @@ function promptUser() {
         }
     ])
     .then(answers => {
-        fs.writeFile("README2.txt", JSON.stringify(answers), (err) => {
+        fs.writeFile("README2.md", generatemd(answers), (err) => {
             if (err) throw err;
-            `${answers.name} is the name of the project`
             console.log("README generated!")
         })
     })

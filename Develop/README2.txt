@@ -1,1 +1,0 @@
-{"name":"jk","description":"jk","installation":"jk","usage":"jk","support":"jk","author":"jk"}
