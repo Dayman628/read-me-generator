@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-const generatemd = require("09-NodeJS\02-Homework\read-me-generator\Develop\utils\generateMarkdown.js")
+const generatemd = require("utils\generateMarkdown.js")
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
